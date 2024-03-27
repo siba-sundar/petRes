@@ -1,0 +1,10 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.loginMainContainer{
+    background-image: url("../assets/loginBackground.svg");
+    width: 100vw;
+    height: 100vh;
+}
