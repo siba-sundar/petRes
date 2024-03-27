@@ -5,7 +5,8 @@ function LoginPage (){
         <>
         <div className="loginMainContainer">
             <div className="loginContentContainer">
-                
+                <div className="loginImage"></div>
+                <div className="loginData"></div>
             </div>
         </div>
         </>

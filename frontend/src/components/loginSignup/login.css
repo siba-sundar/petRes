@@ -7,4 +7,14 @@ body{
     background-image: url("../assets/loginBackground.svg");
     width: 100vw;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginContentContainer{
+    width: 70vw;
+    height: 70vh;
+    background-color: #504343;
+    border-radius: 20px;
 }
