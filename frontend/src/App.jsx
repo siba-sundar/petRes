@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Login from "./components/loginSignup/login.jsx"
+import Login from "./components/loginSignup/signup.jsx"
 
 function App() {
   const [count, setCount] = useState(0)
