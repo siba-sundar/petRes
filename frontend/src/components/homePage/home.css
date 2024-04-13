@@ -1,0 +1,204 @@
+@import url("../fonts/fonts.css");
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.homeMainContainer{
+    width: 100vw;
+    height: 100vh;
+}
+
+.homeMainContainer .homeIntro{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 400px;
+}
+
+.homeMainContainer .homeIntroContent{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 4vw;
+}
+
+.homeMainContainer .homeIntroContent h1{
+    font-size: 6vw;
+    font-family: "Flavors", cursive;
+    margin: 0;
+}
+
+.homeMainContainer .homeIntroContent p{
+    font-size: 1.6vw;
+    padding-top: 3vh;
+    width: 70%;
+}
+
+.homeMainContainer .homeIntroContent .homeAdoptNow{
+    width: 11vw;
+    height: 6.5vh;
+    border-radius: 10px;
+    background-color: #4094F4;
+    color: white;
+    font-weight: 600;
+    border:none;
+    margin-left: 2vw;
+    margin-top: 3vh;
+}
+
+
+.homeIntro .homeIntroBanner{
+    width: 50%;
+    height: 100%;
+}
+
+.homeIntro .homeIntroBanner img{
+    height: 100%;
+    width: 100%;
+}
+
+.homeAbout{
+    background-image: url("../assets/homeAboutBg.svg");
+    width: 100vw;
+    height: 450px;
+    display: flex;
+}
+
+
+.homeAbout .homeAboutContainer{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.homeAboutContainer .homeAboutContent{
+    display: flex;
+    background-color: #FFE6D3;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 45%;
+    height: 75%;
+    border-radius: 10px;
+    padding: 2vw;
+    box-shadow: -15px 15px 10px rgba(0,0,0,0.5);
+    margin-left: 2vw;
+}
+
+.homeAboutContent p{
+    font-size: 1.1vw;
+    padding-top: 4vh;
+}
+
+
+.homeAboutContent .homeAboutUs{
+    margin-top: 3vh;
+    width: 9vw;
+    height: 7vh;
+    border-radius: 8px;
+    background-color: #F95230;
+    border:1px solid white;
+    color: white;
+    box-shadow: -2px 2px 4px rgba(0,0,0,0.4);
+}
+
+
+.homeAbout .homeAboutCategory{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    align-items: center;
+}
+
+
+.homeAboutCategory .aboutCategoryContainer{
+    width: 70%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6vw;
+
+}
+
+.homeAboutCategory .aboutElements{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.aboutElements .animalCategory{
+    width: 11vw;
+}
+
+
+.homeAboutCategory .aboutElements p{
+    margin-top: 1vh;
+    font-size: 1.5vw;
+}
+.homeServicesContainer {
+    padding-bottom: 3vh;
+}
+
+.homeServicesContainer img{
+    width: 100vw;
+    height: 300px;
+}
+
+.homeStoreContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 300px;
+    gap: 4vh;
+}
+
+.homeStoreContainer h2{
+    font-size: 2.5vw;
+}
+.homeStoreContainer .storeContentContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+.homeStoreContainer .productBannerContainer{
+    width: 25vw;
+    height: 17vw;
+    overflow: hidden;
+}
+
+.homeStoreContainer .storeProductsBanner{
+    width: 25vw;
+}
+
+
+.homeShopNow{
+    background-color: #4094F4;
+    border: none;
+    width: 10vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    border-radius: 7px;
+    color: white;
+}
+
+.homeSaleBanner{
+    margin-top: 5vw;
+    width: 100vw;
+
+}
