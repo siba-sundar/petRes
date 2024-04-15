@@ -6,10 +6,10 @@ import { useState, useEffect } from "react";
 const ListingPage = () => {
 
     const [categories, setCategories] = useState([
-        { _id: "6619a3a648c3cd1a53034978", name: "cats" },
-        { _id: "6619a3ad48c3cd1a5303497a", name: "fish" },
-        { _id: "661c1a6e30a3aeeda3a42ce4", name: "dogs" },
-        { _id: "661c1a7730a3aeeda3a42ce6", name: "birds" }
+        { _id: "661d0a62791f88fb6daa92a9", name: "cats" },
+        { _id: "661d0a66791f88fb6daa92ab", name: "fish" },
+        { _id: "661d0a5b791f88fb6daa92a7", name: "dogs" },
+        { _id: "661d0a30791f88fb6daa92a5", name: "birds" }
       ]);
       const [pets, setPets] = useState([]);
     
