@@ -3,7 +3,7 @@ body{
     margin: 0;
 }
 
-.loginMainContainer{
+.signupMainContainer{
     background-image: url("../assets/loginBackground.svg");
     width: 100vw;
     height: 100vh;
@@ -12,7 +12,7 @@ body{
     justify-content: center;
 }
 
-.loginContentContainer{
+.signupContentContainer{
     display: flex;
     align-items: center;
     width: 70vw;
@@ -21,7 +21,7 @@ body{
     border-radius: 20px;
 }
 
-.loginImage{
+.signupImage{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,12 +29,12 @@ body{
     width: 50%;
 }
 
-.loginContentContainer .loginImage img{
+.signupContentContainer .signupImage img{
     width: 80%;
 }
 
 
-.loginContentContainer .loginData{
+.signupContentContainer .signupData{
     width: 50%;
     height: 100%;
     display: flex;
@@ -44,19 +44,19 @@ body{
     gap: 1vh;
 }
 
-.loginContentContainer .loginData h2{
+.signupContentContainer .signupData h2{
     font-size: 2.5vw;
     padding-bottom: .1vh;
 }
 
 
-.loginContentContainer .loginData label{
+.signupContentContainer .signupData label{
     font-size: 1vw;
     margin-top: 2vh;
 }
 
 
-.loginContentContainer .loginData input{
+.signupContentContainer .signupData input{
     width: 24vw;
     height: 5vh;
     border-radius: 30px;
@@ -65,7 +65,7 @@ body{
 }
 
 
-.loginData .loginLoginButton {
+.signupData .signupsignupButton {
     align-items: center;
     margin-top: 2vh;
     appearance: none;
@@ -96,20 +96,20 @@ body{
     font-size: 18px;
    }
    
-   .loginLoginButton:focus {
+   .signupsignupButton:focus {
     box-shadow: #FA902B 0 0 0 1.5px inset, rgba(128, 74, 4, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
    }
    
-   .loginLoginButton:hover {
+   .signupsignupButton:hover {
     box-shadow: rgba(205, 101, 9, 0.3) 0 4px 8px, rgba(166, 65, 6, 0.2) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
     transform: translateY(-2px);
    }
    
-   .loginLoginButton:active {
+   .signupsignupButton:active {
     box-shadow: #ffffff 0 3px 7px inset;
     transform: translateY(2px);
    }
-.loginData .signInOption{
+.signupData .signInOption{
     width: 30vw;
     display: flex;
     align-items: center;
@@ -118,11 +118,11 @@ body{
 }
 
 
-.loginData .signInOption p{
+.signupData .signInOption p{
     font-size: 1.2vw;
 }
 
-.loginData .signInOption a{
+.signupData .signInOption a{
     text-decoration: none;
     color: #f67700;
     font-weight:600;
