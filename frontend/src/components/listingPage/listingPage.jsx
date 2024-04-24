@@ -1,5 +1,6 @@
 import "./listingPage.css";
 import ProfileCard from "./listingCard.jsx"
+import Recom from "./recommendation.jsx"
 import axios from "axios";
 import { useState, useEffect } from "react";
 
@@ -48,18 +49,17 @@ const ListingPage = () => {
     return (
         <div className="listingMainContainer">
             <div className="listingRecommendations">
-                {/* Any content you want to add */}
+                <Recom/>
             </div>
 
             <div className="listingMenu">
                 {categories.map(category => (
-                    <button key={category._id} onClick={() => handleClick(category._id)}>{category.name}</button>
+                    <button key={category._id} onClick={() => handleClick(category._id)} className="categoryButtons">{category.name}</button>
                 ))}
-                 <button onClick={handleGetAll}>Get All</button>
+                 <button onClick={handleGetAll} className="categoryButtons">Get All</button>
             </div>
 
             <div className="listingPets">
-                {/* Render ProfileCard only after details are fetched */}
                 <ProfileCard details={pets} />
             </div>
          </div>

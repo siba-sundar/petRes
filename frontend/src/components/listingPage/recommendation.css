@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.recoMainContainer{
+    display: flex;
+    gap: 6vw;
+    width: 100vw;
+    height: 140px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.recoMainContainer .petCard{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    width: 20vw;
+    height: 80%;
+    gap: 2vw;
+    padding: 0.5vw;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+.recoMainContainer .recomImg{
+    width: 30%;
+    height: 70%;
+}
+
+.recoMainContainer .recomImg img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.petCard .petDetails{
+    font-size: 110%;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    flex-direction: column;
+}
