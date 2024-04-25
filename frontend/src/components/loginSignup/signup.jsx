@@ -75,7 +75,7 @@ function SignupPage (){
                     {usernameExists && <p className="errorText">Username already exists</p>}
                     {emailExists && <p className="errorText">Email already registered</p>}
                     {passwordError && <p className="errorText">{passwordError}</p>}
-                    <form onSubmit={handleSubmit}>
+                    <form  className="formData" onSubmit={handleSubmit}>
                         <label htmlFor="signupName">Username</label>
                         <input type="text" className="signupName" value={name} onChange={(e) => setName(e.target.value)} required />
                         <label htmlFor="signupEmail">E-mail</label>

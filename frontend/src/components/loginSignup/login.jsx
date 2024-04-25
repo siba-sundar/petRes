@@ -1,37 +1,38 @@
 import { useState } from "react";
 import loginImg from "../assets/loginImage.svg";
 import "./login.css";
-import { Link  } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 
-function LoginPage (){
-    /* const [username, setUsername] = useState('');
+function LoginPage({ history }) {
+    const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
-    const history = useHistory();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        
-        try {
-            const response = await axios.post('http://localhost:4001/api/user/login', {
-                username,
-                password
-            });
 
-            if (response.status === 200) {
-                // Redirect user to home page if login is successful
-                history.push('/home');
+        try {
+            const response = await axios.get(`http://localhost:4001/api/user/login/${username}`);
+
+            if (response.data.error) {
+                setError('Please sign in');
             } else {
-                setError('Invalid username or password');
+                const userData = response.data;
+                if (userData.password === password) {
+                    // Redirect user to home page if login is successful
+                    history.push('/home');
+                } else {
+                    setError('Wrong password, please try again');
+                }
             }
         } catch (error) {
             console.error(error);
             setError('An error occurred');
         }
-    } */
+    }
 
-    return(
+    return (
         <div className="loginMainContainer">
             <div className="loginContentContainer">
                 <div className="loginImage">
