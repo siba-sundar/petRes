@@ -6,6 +6,7 @@ import Home from './components/homePage/home.jsx'
 import Adopt from './components/adoption/adoptionHome.jsx'
 import Login from './components/loginSignup/login.jsx'
 import Signup from './components/loginSignup/signup.jsx'
+import Listing from './components/listingPage/listingPage.jsx'
 
 
 function App() {
@@ -28,3 +29,17 @@ function App() {
 }
 
 export default App
+
+
+
+/* function App() {
+
+  return (
+    <>
+    <Listing/>
+    </>
+  )
+}
+
+export default App
+ */

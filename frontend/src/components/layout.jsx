@@ -1,6 +1,6 @@
 import React from 'react'
 import LandingBar from './homePage/navBar'
-// import Newsletter from './landingPage/landingFooter.jsx'
+//import Newsletter from './homePage/footer.jsx'
 import { Outlet } from 'react-router-dom'
 
 function Layout() {
@@ -8,7 +8,7 @@ function Layout() {
     <>
         <LandingBar/>
         <Outlet/>
-        {/* <Newsletter/> */}
+       {/*  <Newsletter/> */}
     </>
   )
 }

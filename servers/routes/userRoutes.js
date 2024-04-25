@@ -15,6 +15,7 @@ const userController = require("../controllers/userController.js");
 // const { registerUser } = require('../controllers/userController');
 
 // POST /api/users/register
+router.get('/get',userController.getAll)
 router.post('/register', userController.registerUser);
 router.get('/login/:username', userController.getUserByUsername);
 router.get('/exists', userController.checkExists);

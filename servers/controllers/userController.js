@@ -1,6 +1,19 @@
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-const User = require('../models/User');
+const User = require('../models/User.js');
+
+
+exports.getAll = async (req, res) => {
+  try {
+    const categories = await Category.find();
+
+    res.json(categories);
+  } catch (error) {
+    console.log(error);
+    res.status(400).json(error);
+  }
+};
+
 
 exports.registerUser = async (req, res) => {
   const { username, email, password } = req.body;
@@ -32,25 +45,21 @@ exports.registerUser = async (req, res) => {
 };
 
 
-exports.getUserByUsername = async (req, res) => {
+exports.getUserByUsername = async (req, res)=> {
+  const { username } = req.params;
+
   try {
-      const { username } = req.params;
-      const user = await User.findOne({ username });
-
-      if (!user) {
-          return res.status(404).json({ error: 'No such user' });
-      }
-
-      res.json({
-          username: user.username,
-          email: user.email,
-          password: user.password // Note: You might not want to return the password in a real-world scenario
-      });
+    const user = await User.findOne({ username }); 
+    if (!user) {
+      return res.status(404).json({ error: 'User not found' });
+    }
+    res.json(user);
   } catch (error) {
-      console.error(error);
-      res.status(500).json({ error: 'Internal server error' });
+    console.error(error);
+    res.status(500).json({ error: 'Server error' });
   }
-};
+}
+
 
 /*   exports.loginUser = async (req, res) => {
       try {
