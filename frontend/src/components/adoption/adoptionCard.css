@@ -1,0 +1,39 @@
+*{padding: 0; margin: 0;}
+
+
+.card__overlay {
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensure the overlay takes the full height of the card */
+}
+
+.card__description {
+    margin-top: 10px; /* Add some space between title and description */
+}
+
+
+
+.card__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+
+.card__title {
+    color: black;
+    font-size: 24px;
+    margin-bottom: 5px;
+    align-items: center;
+}
+
+.card__description {
+    color: black;
+    font-size: 19px;
+    margin-left: 10px;
+}
