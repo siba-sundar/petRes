@@ -1,17 +1,306 @@
-*{
-    padding: 0;
+*{padding: 0; margin: 0;}
+
+
+
+
+
+
+
+
+
+img {
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
+
+}
+
+
+
+.text1 {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    margin-top: 60px;
+}
+
+.text2 {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+
+
+
+
+.card {
+    position: relative;
+    width: 250px;
+    height: auto; /* Adjust height to fit content */
+    margin: 100px;
+    overflow: hidden;
+    border-radius: 15px;
+    background-color: rgb(161, 178, 244);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.card__image-container {
+    width: 100%;
+    height: 200px; /* Set the height for the image container */
+    overflow: hidden;
+}
+
+.card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.my-button {
+    background-color:#4094f4;
+    color: white;
+    border: none;
+    padding: 20px 34px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.my-button a{
+    text-decoration: none;
+    color:white;
+    font-weight: 600;
+}
+
+
+.tool {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+
+
+
+
+  .pet-card {
+    width: 300px;
+    padding: 16px;
+    background-color: white;
+    text-align: center;
+  }
+  
+  .pet-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 16px;
+  }
+  
+  .pet-name {
     margin: 0;
+    margin-bottom: 8px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .description {
+    margin: 0;
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .learn-more-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #5c3d8a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .learn-more-button:hover {
+    background-color: #4a2f68;
+  }
+
+
+
+  
+
+/* Styling the service items */
+.mh-service-item {
+    text-align: center; /* Center aligning the content */
+    margin-bottom: 30px; /* Adding some bottom margin for spacing */
 }
 
-.adoptionHomeMain{
+/* Styling the icons */
+.mh-service-item i {
+    display: block; /* Making the icons block elements for easy styling */
+    margin-bottom: 15px; /* Adding bottom margin for spacing between icon and text */
+}
+
+/* Styling the headings */
+.mh-service-item h3 {
+    font-size: 22px; /* Setting the font size */
+    color: #333; /* Setting the text color */
+    margin-bottom: 10px; /* Adding bottom margin for spacing */
+}
+
+/* Styling the paragraphs */
+.mh-service-item p {
+    font-size: 16px; /* Setting the font size */
+    color: #676161; /* Setting the text color */
+    line-height: 1.6; /* Setting the line height for better readability */
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+.btns{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(137, 148, 242);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+
+
+.upContainer {
+    background-color: #749bfe;
+    padding: 40px;
     width: 100vw;
-    height: 100vh;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.end_container {
+    margin: 0 auto; /* Center the content horizontally */
+    max-width: 1200px; /* Set a maximum width for the content */
+    display: flex; /* Use flexbox to align items */
+    justify-content: space-between; /* Space between content and image */
+    align-items: center; /* Center vertically */
+}
+
+.content {
+    width: calc(50% - 20px); /* 50% width minus padding */
+}
+
+.image-container img {
+    max-width: 50%; /* Set the maximum width of the image to 100% of its container */
+    height: auto; /* Maintain aspect ratio */
 }
 
 
-.adoptionHomeMain .adoptionBannerContainer{
-    background-image: url(../assets//adoptionBanner.svg);
+.end_container h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.topic {
+    font-weight: bold;
+}
+
+.custom-select {
+    width: 160px;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(255, 46, 46);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.topic p {
+    font-size: 16px;
+    line-height: 1.6; /* Setting the line height for better readability */
+    text-align: left;
+}
+
+
+
+
+
+.last{
+    background-color: #ffe5d3;
+    padding: 40px;
     width: 100vw;
-    height: 500px;
-    background-size: cover;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
+.last_box {
+    text-align: center; /* Center aligning the content */
+    margin-bottom: 50px; /* Adding some bottom margin for spacing */
+}
+
+
+.advice {
+    text-align: center; /* Center aligning the content */
+    margin-bottom: 30px; /* Adding some bottom margin for spacing */
+    font-size: 30px;
+}
+
+
+
+/* Styling the headings */
+.advice h3 {
+    font-size: 30px; /* Setting the font size */
+    color: #333; /* Setting the text color */
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 10px; /* Adding bottom margin for spacing */
+}
+
+/* Styling the paragraphs */
+.advice p {
+    font-size: 16px; /* Setting the font size */
+    color: #666; /* Setting the text color */
+    line-height: 1.6; /* Setting the line height for better readability */
+    text-align: left;
+}
+
+.rows {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
