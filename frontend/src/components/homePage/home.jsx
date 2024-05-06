@@ -39,7 +39,7 @@ function Home (){
 
 
                         <button className="homeAboutUs">
-                            More About Us
+                            Adopt Now
                         </button>
                     </div>
                 </div>

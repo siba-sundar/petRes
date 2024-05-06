@@ -1,0 +1,133 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFCBCB;
+    height: 100px;
+    padding: 10px 50px;
+}
+
+.logo {
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px; 
+}
+
+.logo img {
+    width: 220px;
+    height: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #000000;
+    font-size: large;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+
+
+.container1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.wedo {
+    flex: 1;
+    padding: 20px;
+}
+.wedo h4{
+    margin-bottom: 30px;
+    color: rgb(0, 0, 78);
+    font-weight: bold;
+} 
+
+.image {
+    flex: 1;
+    padding: 20px;
+    margin-right: 40px;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.container2{
+    background-color: #ffe5d3;
+    padding: 30px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+
+
+
+.heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.heading h3 {
+    font-size: 24px; /* Adjust the font size as needed */
+    color: #333; /* Adjust the color as needed */
+    margin-bottom: 20px;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+}
+
+.team > div {
+    text-align: center;
+    width: 200px; /* Adjust the width as needed */
+}
+
+.team img {
+    border-radius: 50%;
+    width: 150px; /* Adjust the size of the circular images */
+    height: 150px; /* Adjust the size of the circular images */
+    object-fit: cover;
+    margin: 10px;
+}
+
+.team h4 {
+    margin-bottom: 5px;
+}
+
+.team p {
+    font-size: 14px; /* Adjust the font size as needed */
+}
+
+
+.final_thought{
+    background-color: #FFCBCB;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
