@@ -1,5 +1,5 @@
 import "./listingCard.css";
-//import petImg from "./assets/Rectangle 43.svg";
+import { Link } from "react-router-dom";
 
 const ListingCard = ({ details }) => {
   return (
@@ -8,7 +8,7 @@ const ListingCard = ({ details }) => {
         <div className="cardMainContainer" key={index}>
           <div className="cardImgContainer">
             {/* Fix the image path */}
-            <img src={"http://localhost:4001/" + value.image || petImg} alt="pet img" />
+            <img src={"http://localhost:4001/" + value.image} alt="pet img" />
           </div>
 
           <div className="cardDeatilsContainer">
@@ -23,6 +23,13 @@ const ListingCard = ({ details }) => {
           <hr />
           <div className="petDescription">
             <p>{value.description}</p>
+          </div>
+          
+          <hr />
+
+          <div className="adoptNow">
+            {/* Pass the ID as a URL parameter */}
+            <Link to={`/adoptdetails`}>Adopt Now</Link>
           </div>
         </div>
       ))}

@@ -1,13 +1,16 @@
 import { useState } from "react";
 import loginImg from "../assets/loginImage.svg";
+import { Link, useNavigate } from 'react-router-dom'; // Import Link and useNavigate
 import "./login.css";
-import { Link } from 'react-router-dom';
 import axios from 'axios';
+import bcrypt from 'bcryptjs'; // Import bcrypt library
 
-function LoginPage({ history }) {
+function LoginPage() {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
+    const [loggedIn, setLoggedIn] = useState(false); // State to track login status
+    const navigate = useNavigate(); // Get access to navigate function
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -15,20 +18,27 @@ function LoginPage({ history }) {
         try {
             const response = await axios.get(`http://localhost:4001/api/user/login/${username}`);
 
+            console.log("Data from backend:", response.data); // Log the data received from the backend
+
             if (response.data.error) {
-                setError('Please sign in');
+                setError('User not found');
             } else {
-                const userData = response.data;
-                if (userData.password === password) {
-                    // Redirect user to home page if login is successful
-                    history.push('/home');
+                // Compare hashed password
+                const hashedPassword = response.data.password; // Hashed password from the backend
+                const passwordMatch = await bcrypt.compare(password, hashedPassword);
+                
+                if (passwordMatch) {
+                    // Set login status to true
+                    setLoggedIn(true);
+                    // Redirect to '/Listing'
+                    navigate('/listing');
                 } else {
-                    setError('Wrong password, please try again');
+                    setError('Wrong password');
                 }
             }
         } catch (error) {
             console.error(error);
-            setError('An error occurred');
+            setError('User not Found');
         }
     }
 
@@ -41,19 +51,21 @@ function LoginPage({ history }) {
                 <div className="loginData">
                     <h2>LogIn To Your Account</h2>
                     {error && <p className="errorText">{error}</p>}
-                    <form onSubmit={handleSubmit}>
+                    <form className="loginForm" onSubmit={handleSubmit}>
                         <label htmlFor="loginName">Username</label>
-                        <input type="text" className="loginName" value={username} onChange={(e) => setUsername(e.target.value)} required />
+                        <input type="text" className="loginName" name="username" value={username} onChange={(e) => setUsername(e.target.value)} required />
                         <label htmlFor="loginPass">Password</label>
-                        <input type="password" className="loginPass" value={password} onChange={(e) => setPassword(e.target.value)} required />
+                        <input type="password" className="loginPass" name="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
                         <button type="submit" className="loginLoginButton">Login</button>
                     </form>
-                    <div className="signInOption">
+
+                    <div className="loginInOption">
                         <p>Don't have an Account?</p>
-                        <Link to='/signup' style={{ textDecoration: 'none', color: 'orange' }}>Sign Up</Link>
+                        <Link to='/signup'>Sign Up</Link>
                     </div>
                 </div>
             </div>
+           
         </div>
     )
 }

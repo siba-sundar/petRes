@@ -51,7 +51,7 @@ function SignupPage (){
                 setEmail('');
                 setPassword('');
             } else {
-                alert("Registration failed");
+                alert("User registered successfully");
             }
         } catch (error) {
             console.error(error);
@@ -86,7 +86,7 @@ function SignupPage (){
                     </form>
                     <div className="signInOption">
                         <p>Already have an Account?</p>
-                        <Link to='/login'>Sign ip</Link>
+                        <Link to='/login'>Log In</Link>
                     </div>
                 </div>
             </div>

@@ -65,6 +65,14 @@ body{
 }
 
 
+.loginForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
 .loginData .loginLoginButton {
     align-items: center;
     margin-top: 2vh;
@@ -118,11 +126,16 @@ body{
 }
 
 
-.loginData .signInOption p{
+.loginInOption{
+    display: flex;
+    gap: 0.5vw;
+}
+
+.loginData .loginInOption p{
     font-size: 1.2vw;
 }
 
-.loginData .signInOption a{
+.loginData .loginInOption a{
     text-decoration: none;
     color: #f67700;
     font-weight:600;
