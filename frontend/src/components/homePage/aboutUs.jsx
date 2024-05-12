@@ -28,38 +28,6 @@ const Start = () => {
             <h5>Find your furry soulmate, and let the adventure begin!</h5>
         </div>
     </div>      
-    
-    <br/><br/><br/><br/>
-    <div class="heading">
-        <h3>Our Team</h3>
-    </div>
-    
-    <div class="team">
-        <div class="khushi">
-            <img src={khushi} alt="Team Member 1"/>
-            <h4>Khushi Dixit</h4>
-            <p>Full stack web-developer<br/>passionate about animals</p>
-        </div>
-
-        <div class="vishakha">
-            <img src={vishakha} alt="Team Member 4"/>
-            <h4>Vishakha Bhandari</h4>
-            <p>Full stack web-developer<br/>passionate about animals.</p>
-        </div>
-    
-        <div class="shrey">
-            <img src={shrey} alt="Team Member 2"/>
-            <h4>Shrey Rastogi</h4>
-            <p>Full stack web-developer<br/>passionate about animals.</p>
-        </div>
-    
-        <div class="siba">
-            <img src={siba} alt="Team Member 3"/>
-            <h4>Siba Sundar Panda</h4>
-            <p>Full stack web-developer<br/>passionate about animals.</p>
-        </div>
-    
-    </div>
 
     <br/><br/><br/><br/>
     <div class="final_thought">
